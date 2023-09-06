@@ -61,6 +61,13 @@ body {
     display: flex;
     flex-flow: row wrap;
 }
+.flex-between {
+    justify-content: space-between;
+    gap: 5px;
+}
+.w-full {
+    width: 100%;
+}
 .center {
     text-align: center;
 }
@@ -284,11 +291,11 @@ portfolio projects - portfolio.html
     background: #D40366;
     color: #fff;
 }
-.projectFeatured:after {
+/* .projectFeatured:after {
     content: 'Featured';
     background: #2B2930;
     color: #fff;
-}
+} */
 .projectSite:hover:after, .projectApp:hover:after, .projectFeatured:hover:after {
     opacity: 1;
 }
@@ -314,9 +321,6 @@ portfolio projects - portfolio.html
     justify-content: center;
     align-items: center;
 }
-.featured img {
-    max-width: 600px;
-}
 .featured-desc {
     flex: 1;
     text-align: left;
@@ -326,6 +330,10 @@ portfolio projects - portfolio.html
 }
 .projectFeatured {
     align-self: center;
+    max-width: 600px;
+}
+.mySlides {
+    max-width: 100%;
 }
 
 /* ********************
@@ -367,6 +375,16 @@ button {
 button:hover {
     background: #fff;
     color: var(--color-dark);
+}
+.button-inversed {
+    border: 2px solid #2B2930;
+    background: #2B2930;
+    color: #fff;
+}
+.button-inversed:hover {
+    color: #2B2930;
+    background: none;
+    cursor: pointer;
 }
 button:first-of-type {
     margin-right: 6px;
@@ -707,6 +725,23 @@ icons
 ******************** */
 svg:hover {
     fill: #AFFC41;
+}
+
+/* ********************
+misc ui
+******************** */
+.scroll-left, .scroll-right {
+    box-sizing: border-box;
+    z-index: 10;
+    position: absolute;
+    top: 48%;
+    padding: 5px 10px;
+}
+.scroll-left {
+    left: 1%;
+}
+.scroll-right {
+    right: 1%;
 }
 
 /* ********************

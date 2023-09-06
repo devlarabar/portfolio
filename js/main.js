@@ -40,12 +40,46 @@ function showMobileNav() {
 
 //layout responsiveness for mobile from: https://css-tricks.com/the-trick-to-viewport-units-on-mobile/
 // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
-let vh = window.innerHeight * 0.01;
+let vh = window.innerHeight * 0.01
 // Then we set the value in the --vh custom property to the root of the document
-document.documentElement.style.setProperty('--vh', `${vh}px`);
+document.documentElement.style.setProperty('--vh', `${vh}px`)
 // We listen to the resize event
 window.addEventListener('resize', () => {
     // We execute the same script as before
-    let vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
-  });
+    let vh = window.innerHeight * 0.01
+    document.documentElement.style.setProperty('--vh', `${vh}px`)
+})
+
+
+// let slideIndex = 0;
+// carousel();
+
+// function carousel() {
+//     let i;
+//     let x = document.getElementsByClassName("mySlides");
+//     for (i = 0; i < x.length; i++) {
+//         x[i].style.display = "none";
+//     }
+//     slideIndex++;
+//     if (slideIndex > x.length) { slideIndex = 1 }
+//     x[slideIndex - 1].style.display = "block";
+//     setTimeout(carousel, 2000); // Change image every 2 seconds
+// }
+
+let slideIndex = 1
+showDivs(slideIndex)
+
+function plusDivs(n) {
+    showDivs(slideIndex += n)
+}
+
+function showDivs(n) {
+    let i
+    let x = document.getElementsByClassName('mySlides')
+    if (n > x.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = x.length }
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = 'none'
+    }
+    x[slideIndex - 1].style.display = 'block'
+}
