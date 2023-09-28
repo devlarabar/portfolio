@@ -9,6 +9,7 @@ const nextConfig = {
 
         return config
     },
+    target: 'serverless'
 }
 
 module.exports = nextConfig
