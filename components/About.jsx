@@ -1,4 +1,3 @@
-import Image from "next/image"
 import { MapPinIcon, EnvelopeIcon } from "@heroicons/react/24/outline"
 
 
@@ -6,10 +5,8 @@ const About = () => {
     return (
         <div className="lg-plus:max-w-[320px] flex flex-col sm:flex-row lg-plus:flex-col items-center gap-6">
             <aside className="flex items-center justify-center">
-                <Image
+                <img
                     src="/assets/images/portrait.png"
-                    width={300}
-                    height={300}
                     alt="Lara Alexander"
                     className="rounded-full border-[8px] border-neutral"
                 />

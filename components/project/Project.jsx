@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Link from 'next/link'
 
 const Project = ({ project }) => {
@@ -9,10 +8,8 @@ const Project = ({ project }) => {
         <div className="gradient-bg p-[2.5px] rounded-3xl">
             <section className="w-full rounded-3xl flex flex-col gap-8 items-center justify-start bg-neutral p-8 md:p-12">
                 <h2>{project.name}</h2>
-                <Image
+                <img
                     src={project.image}
-                    width={300}
-                    height={200}
                     className="w-full rounded-xl"
                     alt={project.name}
                 />
