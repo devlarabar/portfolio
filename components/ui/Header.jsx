@@ -20,12 +20,12 @@ const Header = () => {
                     <div className="collapse-content p-0">
                         <ul className="flex flex-col gap-2">
                             <li>
-                                <Link href="/#about">
+                                <Link href="#about">
                                     About
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/#portfolio">
+                                <Link href="#portfolio">
                                     Portfolio
                                 </Link>
                             </li>
@@ -40,7 +40,7 @@ const Header = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/#contactmobile">
+                                <Link href="#contactmobile">
                                     Contact
                                 </Link>
                             </li>
@@ -54,12 +54,12 @@ const Header = () => {
                 <nav className="hidden sm:block text-sm">
                     <ul className="flex items-center gap-10">
                         <li>
-                            <Link href="/#about">
+                            <Link href="#about">
                                 About
                             </Link>
                         </li>
                         <li>
-                            <Link href="/#portfolio">
+                            <Link href="#portfolio">
                                 Portfolio
                             </Link>
                         </li>
@@ -74,7 +74,7 @@ const Header = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link href="/#contact">
+                            <Link href="#contact">
                                 Contact
                             </Link>
                         </li>
