@@ -1,0 +1,28 @@
+{
+  "name": "lara-alexander",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@heroicons/react": "^2.0.18",
+    "@prisma/client": "^5.3.1",
+    "next": "latest",
+    "next-themes": "^0.2.1",
+    "raw-loader": "^4.0.2",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "autoprefixer": "latest",
+    "daisyui": "^3.8.1",
+    "postcss": "latest",
+    "prisma": "^5.3.1",
+    "tailwindcss": "latest"
+  }
+}

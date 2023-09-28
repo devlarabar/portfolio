@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+:root {
+	--foreground-rgb: 0, 0, 0;
+	--background-start-rgb: 214, 219, 220;
+	--background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--foreground-rgb: 255, 255, 255;
+		--background-start-rgb: 0, 0, 0;
+		--background-end-rgb: 0, 0, 0;
+	}
+}
+
+html {
+	padding: 0;
+}
+
+body {
+	padding: 0;
+	padding-top: 150px;
+	margin: 0;
+	scroll-behavior: smooth;
+}
+
+::selection {
+	@apply bg-base-300;
+}
+
+nav a,
+h2,
+h3 {
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 0.15rem;
+	transition: 0.2s ease-in-out;
+	@apply font-extrabold;
+}
+
+a:hover {
+	@apply text-accent;
+}
+
+a:focus,
+input:focus,
+input.input:focus,
+textarea:focus,
+textarea.input:focus,
+button:focus {
+	@apply outline-2 outline-offset-2 outline-dashed outline-primary;
+}
+
+h2 {
+	letter-spacing: 0.2rem;
+	@apply font-bold text-2xl md:text-3xl text-primary text-left w-full;
+}
+
+h3 {
+	@apply font-bold text-xl text-secondary text-left;
+}
+
+.gradient-bg {
+	@apply bg-gradient-to-r from-gradient-start to-accent;
+}
+
+.skip-to-main-content-link {
+	@apply bg-base-100 z-50 opacity-0 w-full text-center font-bold absolute left-[-9999px] py-6 text-current;
+}
+
+.skip-to-main-content-link:focus {
+	left: 50%;
+	transform: translateX(-50%);
+	opacity: 1;
+}
