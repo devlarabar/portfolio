@@ -3,7 +3,6 @@ import Project from "@/components/project/Project"
 import About from "@/components/About"
 import Contact from "@/components/Contact"
 import Separator from "@/components/ui/Separator"
-import Toolkit from "@/components/Toolkit"
 
 export default async function Home() {
 
