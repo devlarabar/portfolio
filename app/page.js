@@ -3,6 +3,7 @@ import Project from "@/components/project/Project"
 import About from "@/components/About"
 import Contact from "@/components/Contact"
 import Separator from "@/components/ui/Separator"
+import Create from "@/components/project/Create"
 
 export default async function Home() {
 
@@ -21,6 +22,7 @@ export default async function Home() {
 					</div>
 				</section>
 				<section className="flex flex-col gap-16 justify-self-end mb-16" name="portfolio">
+					<Create />
 					{projects.map((project, index) => {
 						return <Project project={project} key={index} />
 					})}
