@@ -24,13 +24,13 @@
 
 html {
 	padding: 0;
+	scroll-behavior: smooth !important;
 }
 
 body {
 	padding: 0;
 	padding-top: 150px;
 	margin: 0;
-	scroll-behavior: smooth;
 }
 
 ::selection {

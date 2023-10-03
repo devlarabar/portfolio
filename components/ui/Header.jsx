@@ -2,11 +2,13 @@
 
 import ThemeToggle from "./ThemeToggle"
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 import { ArrowTopRightOnSquareIcon, Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline"
 import { useState } from "react"
 
 const Header = () => {
     const [dropdown, setDropdown] = useState(false)
+    const pathname = usePathname()
 
     return (
         <div className="gradient-bg pb-[2px] fixed top-0 left-0 w-full">
@@ -20,14 +22,20 @@ const Header = () => {
                     <div className="collapse-content p-0">
                         <ul className="flex flex-col gap-2">
                             <li>
-                                <a href="#about">
+                                <Link
+                                    href={`${pathname}#about`}
+                                    aria-label="About"
+                                    title="About">
                                     About
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#portfolio">
+                                <Link
+                                    href={`${pathname}#portfolio`}
+                                    aria-label="Portfolio"
+                                    title="Portfolio">
                                     Portfolio
-                                </a>
+                                </Link>
                             </li>
                             <li>
                                 <Link
@@ -40,9 +48,12 @@ const Header = () => {
                                 </Link>
                             </li>
                             <li>
-                                <a href="#contactmobile">
+                                <Link
+                                    href={`${pathname}#contactmobile`}
+                                    aria-label="Contact"
+                                    title="Contact">
                                     Contact
-                                </a>
+                                </Link>
                             </li>
                             <li>
                                 <ThemeToggle />
@@ -54,12 +65,18 @@ const Header = () => {
                 <nav className="hidden sm:block text-sm">
                     <ul className="flex items-center gap-10">
                         <li>
-                            <Link href="#about">
+                            <Link
+                                href={`${pathname}#about`}
+                                aria-label="About"
+                                title="About">
                                 About
                             </Link>
                         </li>
                         <li>
-                            <Link href="#portfolio">
+                            <Link
+                                href={`${pathname}#portfolio`}
+                                aria-label="Portfolio"
+                                title="Portfolio">
                                 Portfolio
                             </Link>
                         </li>
@@ -74,7 +91,10 @@ const Header = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link href="#contact">
+                            <Link
+                                href={`${pathname}#contact`}
+                                aria-label="Contact"
+                                title="Contact">
                                 Contact
                             </Link>
                         </li>
