@@ -11,7 +11,7 @@ export default async function Home() {
 
 	return (
 		<main>
-			<a href="#main" class="skip-to-main-content-link">Skip to main content</a>
+			<a href="#main" className="skip-to-main-content-link">Skip to main content</a>
 			<section id="main" className="flex flex-col lg-plus:flex-row gap-16 justify-between px-4 xs:px-8 md:px-12 w-full max-w-[1400px] m-auto">
 				<section className="flex flex-col items-center px-8 gap-5">
 					<About id="about" />

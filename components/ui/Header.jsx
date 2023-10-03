@@ -20,14 +20,14 @@ const Header = () => {
                     <div className="collapse-content p-0">
                         <ul className="flex flex-col gap-2">
                             <li>
-                                <Link href="#about">
+                                <a href="#about">
                                     About
-                                </Link>
+                                </a>
                             </li>
                             <li>
-                                <Link href="#portfolio">
+                                <a href="#portfolio">
                                     Portfolio
-                                </Link>
+                                </a>
                             </li>
                             <li>
                                 <Link
@@ -40,9 +40,9 @@ const Header = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#contactmobile">
+                                <a href="#contactmobile">
                                     Contact
-                                </Link>
+                                </a>
                             </li>
                             <li>
                                 <ThemeToggle />

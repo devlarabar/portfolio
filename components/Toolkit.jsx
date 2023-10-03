@@ -1,7 +1,7 @@
 const Toolkit = () => {
     return (
         <section className="px-16 py-8 bg-neutral">
-            <section class="languages flex flex-wrap gap-8 justify-between items-center">
+            <section className="languages flex flex-wrap gap-8 justify-between items-center">
                 <img src="assets/svg/tools/tool_html5.svg" className="w-16 h-16" />
                 <img src="assets/svg/tools/tool_css3.svg" className="w-16 h-16" />
                 <img src="assets/svg/tools/tool_tailwind.svg" className="w-16 h-16" />

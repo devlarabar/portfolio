@@ -28,13 +28,6 @@ const ThemeToggle = () => {
     return (
         <>
             <label className="swap swap-rotate">
-                {/* <input
-                    id="toggle"
-                    type="checkbox"
-                    className="toggle"
-                    checked={theme === 'light'}
-                    onChange={(e) => changeTheme(e)}
-                /> */}
                 <input
                     id="toggle"
                     type="checkbox"
