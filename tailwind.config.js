@@ -2,6 +2,7 @@
 
 const darkTheme = {
 	"primary": "#3abff8",
+	"primary-300": "#C9F3F5",
 	"secondary": "#828df8",
 	"accent": "#FF51D6",
 	"neutral": "#1E2029",
@@ -10,7 +11,10 @@ const darkTheme = {
 	"success": "#39EBD3",
 	"warning": "#FFE26C",
 	"error": "#FF4498",
-	"base-200": "#4F00AB"
+	"base-200": "#4F00AB",
+	"h1:after, h2:after": {
+		"background-color": "#270751",
+	},
 }
 
 const lightTheme = {
@@ -23,7 +27,13 @@ const lightTheme = {
 	"success": "#39EBD3",
 	"warning": "#FFE26C",
 	"error": "#FF4498",
-	"base-200": "#E8DBC5"
+	"base-200": "#E8DBC5",
+	"h1:after, h2:after": {
+		"background-color": "#C9F3F5",
+	},
+	".stars-container": {
+		"display": "none",
+	}
 }
 
 module.exports = {
@@ -39,9 +49,10 @@ module.exports = {
 			'lg': '1024px',
 			'xl': '1280px',
 			'2xl': '1536px',
-			'xs': '320px',
+			'xs': '450px',
+			'2xs': '350px',
 			'mdlg': '900px',
-			'lg-plus': '1120px',
+			'lg-plus': '1200px',
 		},
 		extend: {
 			backgroundImage: {

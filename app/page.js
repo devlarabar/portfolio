@@ -3,6 +3,7 @@ import Project from "@/components/project/Project"
 import About from "@/components/About"
 import Contact from "@/components/Contact"
 import Separator from "@/components/ui/Separator"
+import Toolkit from "@/components/Toolkit"
 
 export default async function Home() {
 
@@ -10,23 +11,25 @@ export default async function Home() {
 	const projects = await prisma.project.findMany()
 
 	return (
-		<main>
+		<main className="mx-auto pt-24">
 			<a href="#main" className="skip-to-main-content-link">Skip to main content</a>
-			<section id="main" className="flex flex-col lg-plus:flex-row gap-16 justify-between px-4 xs:px-8 md:px-12 w-full max-w-[1400px] m-auto">
-				<section className="flex flex-col items-center px-8 gap-5" id="about">
+			<section id="main" className="max-w-7xl flex flex-col gap-16 justify-between px-8 max-2xs:px-4 md:px-12 w-full max-w-8xl m-auto">
+				<section className="flex flex-col items-center gap-5" id="about">
 					<About />
 					<Separator />
-					<div className="hidden lg-plus:block">
-						<Contact id="contact" />
-					</div>
 				</section>
-				<section className="flex flex-col gap-16 justify-self-end mb-16" id="portfolio">
+				<h2>Recent Works</h2>
+				<section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-self-end mb-16 mx-auto" id="portfolio">
 					{projects.map((project, index) => {
 						return <Project project={project} key={index} />
 					})}
 				</section>
+				<section>
+					<h2>Toolkit</h2>
+					<Toolkit />
+				</section>
 			</section>
-			<div className="flex flex-col gap-8 lg-plus:hidden px-8 md:px-16" id="contactmobile">
+			<div className="flex flex-col gap-8 px-4 2xs:px-8 lg:px-16 mt-24 py-20 bg-neutral" id="contactmobile">
 				<Separator />
 				<Contact />
 			</div>

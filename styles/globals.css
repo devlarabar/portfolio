@@ -29,7 +29,6 @@ html {
 
 body {
 	padding: 0;
-	padding-top: 150px;
 	margin: 0;
 }
 
@@ -43,8 +42,11 @@ h3 {
 	text-transform: uppercase;
 	text-decoration: none;
 	letter-spacing: 0.15rem;
-	transition: 0.2s ease-in-out;
 	@apply font-extrabold;
+}
+
+a {
+	transition: 0.2s ease-in-out;
 }
 
 a:hover {
@@ -60,13 +62,45 @@ button:focus {
 	@apply outline-2 outline-offset-2 outline-dashed outline-primary;
 }
 
+h1 {
+	letter-spacing: 0.2rem;
+	@apply relative font-extrabold text-3xl md:text-4xl text-primary text-left w-fit mb-3;
+}
+
 h2 {
 	letter-spacing: 0.2rem;
-	@apply font-bold text-2xl md:text-3xl text-primary text-left w-full;
+	@apply relative font-bold text-2xl md:text-3xl text-secondary text-center mx-auto w-fit;
+}
+
+h2:after,
+h1:after {
+	display: block;
+	content: "";
+	width: 100%;
+	height: 60%;
+	z-index: -1;
+	position: absolute;
+	bottom: -2px;
+	left: 10px;
+	filter: blur(2px);
 }
 
 h3 {
-	@apply font-bold text-xl text-secondary text-left;
+	@apply font-bold text-xl md:text-xl text-primary text-left w-full;
+}
+
+h4 {
+	@apply font-bold text-xl text-primary text-left;
+}
+
+main {
+	z-index: 100;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+	@apply p-3 border-2 border-base-200 rounded-md bg-base-100;
 }
 
 .gradient-bg {
