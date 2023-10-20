@@ -1,12 +1,11 @@
 import Link from 'next/link'
 
-const Project = ({ project }) => {
+const ProjectDetails = ({ project }) => {
 
     const description = { __html: project.description }
 
     return (
-        // <div className="gradient-bg p-[2.5px] rounded-3xl">
-        <section className="w-full rounded-3xl flex flex-col gap-3 items-center justify-start bg-neutral p-6 max-2xs:p-5">
+        <section className="w-full rounded-3xl flex flex-col gap-3 items-center justify-start bg-neutral p-6 max-2xs:p-5 h-full">
             <Link href={`/portfolio/${project.id}`}>
                 <img
                     src={project.image}
@@ -27,7 +26,7 @@ const Project = ({ project }) => {
                     </button>
                 </Link>}
             </div>
-            {/* <div dangerouslySetInnerHTML={description} className="w-full flex flex-col gap-3 text-sm"></div> */}
+            <div dangerouslySetInnerHTML={description} className="w-full flex flex-col gap-3 text-sm"></div>
             <div className="flex flex-wrap gap-3 2xs:gap-3 w-full">
                 {project.tools.split(', ').map((tool, index) => {
                     return (
@@ -40,8 +39,7 @@ const Project = ({ project }) => {
                 })}
             </div>
         </section>
-        // </div>
     )
 }
 
-export default Project
+export default ProjectDetails

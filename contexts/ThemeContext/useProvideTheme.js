@@ -12,11 +12,7 @@ const ToggleThemeProvider = ({ children }) => {
         setMounted(true)
     }, [])
 
-    if (!mounted) {
-        return <>{children}</>
-    }
-
-    return (
+    if (mounted) return (
         <ThemeProvider>{children}</ThemeProvider>
     )
 }

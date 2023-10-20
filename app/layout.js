@@ -1,5 +1,5 @@
-import '../styles/globals.css'
-import '../styles/stars.css'
+import '@/styles/globals.css'
+import '@/styles/stars.css'
 import { Inter } from 'next/font/google'
 import ToggleThemeProvider from '@/contexts/ThemeContext/useProvideTheme'
 import ThemeToggle from '@/components/ui/ThemeToggle'
@@ -16,17 +16,18 @@ export const metadata = {
 	icons: [{ rel: 'icon', url: Favicon.src }],
 }
 
-export default function RootLayout({ children }) {
+const RootLayout = ({ children, modal }) => {
 	return (
 		<html lang="en">
 			<body className={inter.className}>
 				<ToggleThemeProvider>
 					<Navigation ThemeToggle={ThemeToggle} />
-					<div class="stars-container">
+					<div className="stars-container">
 						<div id="stars"></div>
 						<div id="stars2"></div>
 						<div id="stars3"></div>
 					</div>
+					{modal}
 					<main className="content">
 						{children}
 					</main>
@@ -36,3 +37,5 @@ export default function RootLayout({ children }) {
 		</html>
 	)
 }
+
+export default RootLayout

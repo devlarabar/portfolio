@@ -1,7 +1,7 @@
 const Toolkit = () => {
     const size = "max-xs:w-9 max-xs:h-9 w-14 h-14"
     return (
-        <section className="p-6 rounded-3xl mt-2 max-2xs:p-4">
+        <section className="px-6 rounded-3xl max-2xs:p-4">
             <section className="languages flex flex-wrap gap-4 2xs:gap-8 justify-center content-center items-center">
                 <img src="assets/svg/tools/tool_html5.svg" className={size} />
                 <img src="assets/svg/tools/tool_css3.svg" className={size} />
