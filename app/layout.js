@@ -7,6 +7,7 @@ import Header from '@/components/ui/Header'
 import Footer from '@/components/ui/Footer'
 import Favicon from '@/public/assets/images/favicon.ico'
 import Navigation from '@/components/ui/Navigation'
+import ProgressIndicator from '@/components/ui/ProgressIndicator'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -21,6 +22,7 @@ const RootLayout = ({ children, modal }) => {
 		<html lang="en">
 			<body className={inter.className}>
 				<ToggleThemeProvider>
+					<ProgressIndicator />
 					<Navigation ThemeToggle={ThemeToggle} />
 					<div className="stars-container">
 						<div id="stars"></div>

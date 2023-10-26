@@ -15,7 +15,7 @@ const About = () => {
                 </aside>
                 <div className="w-full" name="about">
                     <h1>Lara Alexander</h1>
-                    <p>Creative software developer with a love for art and automation, and experience in full-stack development, data analysis, and design.</p>
+                    <p className="text-lg">Creative software developer with a love for art and automation, and experience in full-stack development, data analysis, and design.</p>
                     <ul className="mt-3 max-sm:text-sm">
                         <li className="flex gap-2 mt-2 items-center">
                             <MapPinIcon className="h-8 w-8" /> Jacksonville, FL | Toronto, ON

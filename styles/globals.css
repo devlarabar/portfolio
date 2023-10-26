@@ -147,3 +147,15 @@ html::-webkit-scrollbar-thumb,
 			transparent 75%,
 			transparent)
 }
+
+.progress {
+	height: 0.1875rem;
+}
+
+.progress .progress-bar {
+	height: 0.2rem;
+	transform-origin: left;
+	will-change: transform;
+	transform: scaleX(0);
+	@apply w-full bg-accent;
+}
