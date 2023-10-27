@@ -7,7 +7,7 @@ const Project = ({ project }) => {
     return (
         // <div className="gradient-bg p-[2.5px] rounded-3xl">
         <section className="w-full rounded-3xl flex flex-col gap-3 items-center justify-start bg-neutral">
-            <Link href={`/portfolio/${project.id}`} scroll={false}>
+            <Link href={`/portfolio/${project.id}`}>
                 <img
                     src={`/assets/images${project.image}`}
                     className="w-full rounded-xl"

@@ -29,7 +29,6 @@ const RootLayout = ({ children, modal }) => {
 						<div id="stars2"></div>
 						<div id="stars3"></div>
 					</div>
-					{modal}
 					<main>
 						{children}
 					</main>
