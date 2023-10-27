@@ -30,7 +30,7 @@ const RootLayout = ({ children, modal }) => {
 						<div id="stars3"></div>
 					</div>
 					{modal}
-					<main className="content">
+					<main>
 						{children}
 					</main>
 					<Footer />

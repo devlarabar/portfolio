@@ -18,7 +18,9 @@ const ProjectModal = async ({ params }) => {
 
     return (
         <Modal>
-            <ProjectDetails project={project} />
+            <section className="w-full max-w-4xl mx-auto rounded-3xl bg-neutral px-6 pb-6 pt-4 max-2xs:p-5 overflow-auto">
+                <ProjectDetails project={project} />
+            </section>
         </Modal>
     )
 }

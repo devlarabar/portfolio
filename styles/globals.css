@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+	font-family: "Nexa";
+	src: url("../public/fonts/cozy_space.otf");
+}
+
 *,
 *:before,
 *:after {
@@ -51,6 +56,7 @@ h3 {
 
 a {
 	transition: 0.2s ease-in-out;
+	@apply underline underline-offset-2;
 }
 
 a:hover {
@@ -158,4 +164,9 @@ html::-webkit-scrollbar-thumb,
 	will-change: transform;
 	transform: scaleX(0);
 	@apply w-full bg-accent;
+}
+
+.project-description ul {
+	list-style-type: disc;
+	padding-left: 3rem;
 }

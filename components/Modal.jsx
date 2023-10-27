@@ -1,14 +1,25 @@
 'use client'
-import { useCallback, useRef, useEffect } from 'react'
+import { useCallback, useRef, useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
+import { XMarkIcon } from '@heroicons/react/24/outline'
 
 export default function Modal({ children }) {
     const overlay = useRef(null)
     const wrapper = useRef(null)
     const router = useRouter()
+    const [disableBodyScroll, setDisableBodyScroll] = useState(true)
+
+    useEffect(() => {
+        if (disableBodyScroll) {
+            document.body.style.overflow = 'hidden'
+        } else {
+            document.body.style.overflow = 'auto'
+        }
+    }, [disableBodyScroll])
 
     const onDismiss = useCallback(() => {
         router.back()
+        setDisableBodyScroll(false)
     }, [router])
 
     const onClick = useCallback(
@@ -40,8 +51,14 @@ export default function Modal({ children }) {
         >
             <div
                 ref={wrapper}
-                className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full sm:w-10/12 md:w-8/12 lg:w-1/2 p-6 bg-neutral p-5 rounded-3xl shadow-xl max-h-[80vh] overflow-auto"
+                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-[100vh] sm:w-10/12 md:w-8/12 lg:w-1/2 bg-neutral p-5 shadow-xl sm:max-h-[80vh] overflow-auto"
             >
+                <button
+                    onClick={onDismiss}
+                    className="block ml-4 mt-4"
+                >
+                    <XMarkIcon className="w-6 h-6 hover:fill-secondary" />
+                </button>
                 {children}
             </div>
         </div>

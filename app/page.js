@@ -20,8 +20,11 @@ export default async function Home() {
 					<Separator />
 				</section>
 				<section className="flex flex-col gap-16">
-					<h2>Recent Works</h2>
-					<section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-self-end mb-16 mx-auto" id="portfolio">
+					<div className="flex flex-col gap-2">
+						<h2>Recent Works</h2>
+						<span className="font-nexa block text-center italic text-2xl">click for more info!</span>
+					</div>
+					<section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-self-end mb-8 mx-auto" id="portfolio">
 						{projects.map((project, index) => {
 							return <Project project={project} key={index} />
 						})}
@@ -32,7 +35,7 @@ export default async function Home() {
 					<Toolkit />
 				</section>
 			</section>
-			<div className="flex flex-col gap-8 px-4 2xs:px-8 lg:px-16 mt-32 py-20 bg-neutral" id="contactmobile">
+			<div className="flex flex-col gap-8 px-4 2xs:px-8 lg:px-16 mt-24 py-20 bg-neutral" id="contactmobile">
 				<Separator />
 				<Contact />
 			</div>
