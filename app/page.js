@@ -5,6 +5,7 @@ import Contact from "@/components/Contact"
 import Separator from "@/components/ui/Separator"
 import Toolkit from "@/components/Toolkit"
 import Link from "next/link"
+import ProjectsContainer from "@/components/project/ProjectsContainer"
 
 export default async function Home() {
 
@@ -24,11 +25,7 @@ export default async function Home() {
 						<h2>Recent Works</h2>
 						<span className="font-nexa block text-center italic text-2xl">click for more info!</span>
 					</div>
-					<section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-self-end mb-8 mx-auto" id="portfolio">
-						{projects.map((project, index) => {
-							return <Project project={project} key={index} />
-						})}
-					</section>
+					<ProjectsContainer projects={projects} />
 				</section>
 				<section className="flex flex-col gap-16">
 					<h2>Toolkit</h2>

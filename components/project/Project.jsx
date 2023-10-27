@@ -1,19 +1,23 @@
 import Link from 'next/link'
-
-const Project = ({ project }) => {
+const Project = ({ project, setIsModalOpen, setSelectedProject }) => {
 
     const description = { __html: project.description }
+    const onClick = (e) => {
+        setSelectedProject(project)
+        setIsModalOpen(true)
+    }
 
     return (
         // <div className="gradient-bg p-[2.5px] rounded-3xl">
         <section className="w-full rounded-3xl flex flex-col gap-3 items-center justify-start bg-neutral">
-            <Link href={`/portfolio/${project.id}`}>
-                <img
-                    src={`/assets/images${project.image}`}
-                    className="w-full rounded-xl"
-                    alt={project.name}
-                />
-            </Link>
+            {/* <Link href={`/portfolio/${project.id}`}> */}
+            <img
+                src={`/assets/images${project.image}`}
+                className="w-full rounded-xl hover:cursor-pointer"
+                alt={project.name}
+                onClick={onClick}
+            />
+            {/* </Link> */}
             {/* <h3>{project.name}</h3> */}
             {/* <div className="flex gap-3 w-full justify-start">
                 {project.demo && <Link href={project.demo} className="w-full">

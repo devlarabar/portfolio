@@ -170,3 +170,17 @@ html::-webkit-scrollbar-thumb,
 	list-style-type: disc;
 	padding-left: 3rem;
 }
+
+.custom-modal {
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	@apply bg-neutral bg-opacity-50;
+}
