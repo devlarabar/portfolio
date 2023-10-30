@@ -171,6 +171,10 @@ html::-webkit-scrollbar-thumb,
 	padding-left: 3rem;
 }
 
+.project-preview-image {
+	box-shadow: 2px 1px 10px rgba(0, 0, 0, 0.1);
+}
+
 .custom-modal {
 	position: fixed;
 	display: flex;

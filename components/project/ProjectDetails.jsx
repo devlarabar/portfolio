@@ -40,9 +40,9 @@ const ProjectDetails = ({ project }) => {
                 })}
             </div>
             <h3 className="mt-5">Take a look!</h3>
-            <section className="w-full grid gap-6">
+            <section className="w-full grid gap-12">
                 {images.map((image, index) => {
-                    return <img src={`/assets/images${image}`} key={index} />
+                    return <img src={`/assets/images${image}`} key={index} class="project-preview-image" />
                 })}
             </section>
         </section>

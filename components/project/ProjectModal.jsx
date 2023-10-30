@@ -17,8 +17,8 @@ const Modal = ({ isOpen, toggleModal, closeOnOutsideClick, children }) => {
     }, [modalRef, closeOnOutsideClick, toggleModal])
 
     return (
-        <div className="custom-modal w-full h-[100vh]" style={!isOpen ? { display: 'none' } : null}>
-            <div className="custom-modal__wrapper bg-neutral h-[100vh] sm:w-10/12 md:w-8/12 lg:w-1/2 p-8 shadow-xl sm:max-h-[80vh] overflow-auto" ref={modalRef}>
+        <div className="custom-modal w-full h-full" style={!isOpen ? { display: 'none' } : null}>
+            <div className="custom-modal__wrapper bg-neutral h-full sm:w-10/12 md:w-8/12 lg:w-1/2 p-8 shadow-xl sm:max-h-[80vh] overflow-auto" ref={modalRef}>
                 {children}
             </div>
         </div>
