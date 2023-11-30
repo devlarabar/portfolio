@@ -7,15 +7,17 @@ const Toolkit = () => {
                 <img src="assets/svg/tools/tool_css3.svg" className={size} />
                 <img src="assets/svg/tools/tool_tailwind.svg" className={size} />
                 <img src="assets/svg/tools/tool_js.svg" className={size} />
+                <img src="assets/svg/tools/tool_ts.svg" className={size} />
                 <img src="assets/svg/tools/tool_mongodb.svg" className={size} />
                 <img src="assets/svg/tools/tool_node.svg" className={size} />
                 <img src="assets/svg/tools/tool_react.svg" className={size} />
-                <img src="assets/svg/tools/tool_nextjs.svg" className={`bg-base-200 p-2 rounded-2xl ${size}`} />
+                <img src="assets/svg/tools/tool_nextjs.svg" className={size} />
                 <img src="assets/svg/tools/tool_python.svg" className={size} />
                 <img src="assets/svg/tools/tool_django.svg" className={size} />
                 <img src="assets/svg/tools/tool_git.svg" className={size} />
                 <img src="assets/svg/tools/tool_photoshop.svg" className={size} />
                 <img src="assets/svg/tools/tool_illustrator.svg" className={size} />
+                <img src="assets/svg/tools/tool_figma.svg" className={size} />
             </section>
         </section>
     )
