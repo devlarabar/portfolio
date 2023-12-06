@@ -37,7 +37,7 @@ const ProjectsContainer = ({ projects }) => {
             }
             <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-self-end mb-8 mx-auto" id="portfolio">
                 {projects.map((project, index) => {
-                    return <Project project={project} key={index} setIsModalOpen={setIsModalOpen} setSelectedProject={setSelectedProject} />
+                    return project.id !== "cln2btgny0003ti1szh6t8k1k" && <Project project={project} key={index} setIsModalOpen={setIsModalOpen} setSelectedProject={setSelectedProject} />
                 })}
             </section>
         </section>
