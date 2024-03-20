@@ -10,7 +10,7 @@ const About = () => {
                     <img
                         src="/assets/images/portrait.png"
                         alt="Lara Alexander"
-                        className="rounded-full border-[8px] border-neutral max-w-2xs max-sm:w-72 max-2xs:w-52"
+                        className="rounded-full border-[8px] border-neutral max-w-2xs max-sm:w-72 max-2xs:w-52 aspect-square"
                     />
                 </aside>
                 <div className="w-full" name="about">

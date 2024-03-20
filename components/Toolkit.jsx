@@ -15,6 +15,8 @@ const Toolkit = () => {
                 <img src="assets/svg/tools/tool_astro.svg" className={size} alt="Astro" />
                 <img src="assets/svg/tools/tool_python.svg" className={size} alt="Python" />
                 <img src="assets/svg/tools/tool_django.svg" className={size} alt="Django" />
+                <img src="assets/svg/tools/tool_php.svg" className={size} alt="PHP" />
+                <img src="assets/svg/tools/tool_wordpress.svg" className={size} alt="WordPress" />
                 <img src="assets/svg/tools/tool_git.svg" className={size} alt="Git" />
                 <img src="assets/svg/tools/tool_photoshop.svg" className={size} alt="Adobe Photoshop" />
                 <img src="assets/svg/tools/tool_illustrator.svg" className={size} alt="Adobe Illustrator" />
