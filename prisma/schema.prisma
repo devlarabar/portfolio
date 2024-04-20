@@ -19,4 +19,5 @@ model project {
     description String
     demo        String
     repository  String
+    archived    Boolean @default(false)
 }

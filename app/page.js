@@ -10,7 +10,9 @@ import ProjectsContainer from "@/components/project/ProjectsContainer"
 export default async function Home() {
 
 	const prisma = new PrismaClient()
-	const projects = await prisma.project.findMany()
+	const projects = await prisma.project.findMany({
+		where: { archived: false }
+	  })
 
 	return (
 		<main className="mx-auto pt-24">

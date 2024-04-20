@@ -173,6 +173,7 @@ html::-webkit-scrollbar-thumb,
 
 .project-preview-image {
 	box-shadow: 2px 1px 10px rgba(0, 0, 0, 0.1);
+	margin: auto;
 }
 
 .custom-modal {

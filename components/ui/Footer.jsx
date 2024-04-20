@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <footer className="footer footer-center flex flex-col sm:flex-row justify-between gap-2 p-8 bg-base-100 text-base-content">
             <aside>
-                <p>Copyright © 2023 - All right reserved by Lara Alexander</p>
+                <p>Copyright © 2024 - All right reserved by Lara Alexander</p>
             </aside>
             <ul className="flex flex-row gap-3">
                 <li>
