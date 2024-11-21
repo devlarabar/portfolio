@@ -36,7 +36,7 @@ const Footer = () => {
                     </a>
                 </li>
                 <li>
-                    <Link href="/resume/Lara-Alexander_Resume.pdf" target="_blank" className="flex gap-2 items-center" aria-label="Resume">
+                    <Link href="/resume/Lara_Shalab-Alsham_Resume.pdf" target="_blank" className="flex gap-2 items-center" aria-label="Resume">
                         <DocumentCheckIcon className={size} />
                     </Link>
                 </li>
