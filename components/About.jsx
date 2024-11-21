@@ -56,7 +56,7 @@ const About = () => {
                                 </svg>
                                 <span className="max-xs:hidden">LinkedIn</span>
                             </a>
-                            <Link href="/resume/Lara-Alexander_Resume.pdf"
+                            <Link href="/resume/Lara_Shalab-Alsham_Resume.pdf"
                                 className="flex gap-2 items-center"
                                 aria-label="Resume"
                                 target="_blank">
