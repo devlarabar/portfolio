@@ -9,10 +9,11 @@ const Toolkit = () => {
                 <img src="assets/svg/tools/tool_js.svg" className={size} alt="JavaScript" />
                 <img src="assets/svg/tools/tool_ts.svg" className={size} alt="TypeScript" />
                 <img src="assets/svg/tools/tool_mongodb.svg" className={size} alt="MongoDB" />
+                <img src="assets/svg/tools/tool_postgres.svg" className={size} alt="PostgreSQL" />
+                <img src="assets/svg/tools/tool_supabase.svg" className={size} alt="Supabase" />
                 <img src="assets/svg/tools/tool_node.svg" className={size} alt="Node.js" />
                 <img src="assets/svg/tools/tool_react.svg" className={size} alt="React" />
                 <img src="assets/svg/tools/tool_nextjs.svg" className={size} alt="Next.js" />
-                <img src="assets/svg/tools/tool_astro.svg" className={size} alt="Astro" />
                 <img src="assets/svg/tools/tool_python.svg" className={size} alt="Python" />
                 <img src="assets/svg/tools/tool_django.svg" className={size} alt="Django" />
                 <img src="assets/svg/tools/tool_php.svg" className={size} alt="PHP" />

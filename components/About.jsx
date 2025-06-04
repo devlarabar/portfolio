@@ -1,6 +1,6 @@
-import { MapPinIcon, EnvelopeIcon, DocumentCheckIcon } from "@heroicons/react/24/outline"
-import Toolkit from "./Toolkit"
+import { MapPinIcon, EnvelopeIcon, DocumentCheckIcon, BuildingOfficeIcon } from "@heroicons/react/24/outline"
 import Link from "next/link"
+import Image from "next/image"
 
 const About = () => {
     return (
@@ -14,18 +14,42 @@ const About = () => {
                     />
                 </aside>
                 <div className="w-full" name="about">
-                    <h1>Lara Alexander</h1>
-                    <p className="text-lg">Creative software developer with a love for art and automation, and experience in full-stack development, data analysis, and design.</p>
+                    <div className="flex flex-col xs:flex-row gap-0 mb-2 xs:mb-0 xs:gap-4 items-baseline">
+                        <h1>Lara Alexander</h1>
+                        <span className="italic">(A.K.A. Shalab-Alsham)</span>
+                    </div>
+                    <div className="flex flex-col gap-2 text-lg">
+                        <p>
+                            Creative software developer with a love for art and automation, 
+                            and experience in full-stack development, developer advocacy, data analysis, and design.
+                        </p>
+                    </div>
                     <ul className="mt-3 max-sm:text-sm">
-                        <li className="flex gap-2 mt-2 items-center">
-                            <MapPinIcon className="h-8 w-8" /> Jacksonville, FL | Toronto, ON
+                        <li className="flex max-xs:flex-col gap-2 mt-2 xs:items-center">
+                        <BuildingOfficeIcon className="h-8 w-8" />
+                            <span>
+                                Building stellar software at <a href="https://ion8.net">ion8</a>!
+                            </span>
+                        </li>
+                        <li className="flex max-xs:flex-col gap-2 mt-2 xs:items-center">
+                            <div className="flex gap-2 items-center">
+                                <MapPinIcon className="h-8 w-8" /> Jacksonville, FL | Toronto, ON
+                            </div>
+                            <span className="font-nexa text-[1.2rem] text-accent italic flex items-center gap-2">
+                                <Image
+                                    src="/assets/images/misc/canada_usa.png"
+                                    alt="Canada and USA flags"
+                                    width={30}
+                                    height={30}
+                                />
+                                I'm a dual citizen!</span>
                         </li>
                         <li className="flex gap-2 mt-2 items-center">
-                            <a href="mailto:lara.alexander@hotmail.com"
+                            <a href="mailto:lsalsham@hotmail.com"
                                 className="flex gap-2 items-center"
                                 aria-label="E-Mail"
                                 target="_blank">
-                                <EnvelopeIcon className="h-8 w-8" /> lara.alexander@hotmail.com
+                                <EnvelopeIcon className="h-8 w-8" /> lsalsham@hotmail.com
                             </a>
                         </li>
                         <li className="flex gap-5 lg-plus:gap-3 mt-4 items-center">
@@ -38,7 +62,8 @@ const About = () => {
                                 </svg>
                                 <span className="max-xs:hidden">GitHub</span>
                             </a>
-                            <a href="https://twitter.com/devlarabar"
+                            {/* I'll add this back if I start using Twitter again */}
+                            {/* <a href="https://twitter.com/devlarabar"
                                 className="flex gap-2 items-center"
                                 aria-label="X/Twitter"
                                 target="_blank">
@@ -46,7 +71,7 @@ const About = () => {
                                     <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" className="fill-current hover:fill-accent" />
                                 </svg>
                                 <span className="max-xs:hidden">Twitter</span>
-                            </a>
+                            </a> */}
                             <a href="https://www.linkedin.com/in/lara-sa/"
                                 className="flex gap-2 items-center"
                                 aria-label="LinkedIn"

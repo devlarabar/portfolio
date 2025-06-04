@@ -6,11 +6,11 @@ const Footer = () => {
     return (
         <footer className="footer footer-center flex flex-col sm:flex-row justify-between gap-2 p-8 bg-base-100 text-base-content">
             <aside>
-                <p>Copyright © 2024 - All right reserved by Lara Alexander</p>
+                <p>Copyright © 2024 - All right reserved by Lara Alexander <em>(née Shalab-Alsham)</em></p>
             </aside>
             <ul className="flex flex-row gap-3">
                 <li>
-                    <a href="mailto:lara.alexander@hotmail.com" className="flex gap-2 items-center" aria-label="E-Mail">
+                    <a href="mailto:lsalsham@hotmail.com" className="flex gap-2 items-center" aria-label="E-Mail">
                         <EnvelopeIcon className={size} />
                     </a>
                 </li>
@@ -21,13 +21,14 @@ const Footer = () => {
                         </svg>
                     </a>
                 </li>
-                <li>
+                {/* I'll add this back if I start using Twitter again */}
+                {/* <li>
                     <a href="https://twitter.com/devlarabar" className="flex gap-2 items-center" aria-label="X/Twitter">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className={size}>
                             <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" className="fill-current hover:fill-accent" />
                         </svg>
                     </a>
-                </li>
+                </li> */}
                 <li>
                     <a href="https://www.linkedin.com/in/lara-sa/" className="flex gap-2 items-center" aria-label="LinkedIn">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className={size}>
