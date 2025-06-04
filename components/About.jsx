@@ -28,7 +28,7 @@ const About = () => {
                         <li className="flex max-xs:flex-col gap-2 mt-2 xs:items-center">
                         <BuildingOfficeIcon className="h-8 w-8" />
                             <span>
-                                Building stellar software at <a href="https://ion8.net">ion8</a>!
+                                Building stellar software at <a href="https://ion8.net" target="_blank">ion8</a>!
                             </span>
                         </li>
                         <li className="flex max-xs:flex-col gap-2 mt-2 xs:items-center">
