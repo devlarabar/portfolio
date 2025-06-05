@@ -15,8 +15,8 @@ const About = () => {
                 </aside>
                 <div className="w-full" name="about">
                     <div className="flex flex-col xs:flex-row gap-0 mb-2 xs:mb-0 xs:gap-4 items-baseline">
-                        <h1>Lara Alexander</h1>
-                        <span className="italic">(A.K.A. Shalab-Alsham)</span>
+                        <h1>Lara S.A.</h1>
+                        {/* <span className="italic">(A.K.A. Shalab-Alsham)</span> */}
                     </div>
                     <div className="flex flex-col gap-2 text-lg">
                         <p>
