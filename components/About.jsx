@@ -23,6 +23,7 @@ const About = () => {
                             Creative software developer with a love for art and automation, 
                             and experience in full-stack development, developer advocacy, software architecture, and design.
                         </p>
+                        <p>In my free time, I like lifting heavy things, playing and <a href="https://tinydoom.com">developing games</a>, and creating art.</p>
                     </div>
                     <ul className="mt-3 max-sm:text-sm">
                         <li className="flex max-xs:flex-col gap-2 mt-2 xs:items-center">
