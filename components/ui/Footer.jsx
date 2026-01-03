@@ -3,10 +3,11 @@ import Link from "next/link"
 
 const Footer = () => {
     const size = "w-6 h-6"
+    const thisYear = new Date().getFullYear()
     return (
         <footer className="footer footer-center flex flex-col sm:flex-row justify-between gap-2 p-8 bg-base-100 text-base-content">
             <aside>
-                <p>© Copyright 2025 - All right reserved by Lara Shalab Alsham <em>(A.K.A. Lara Alexander)</em></p>
+                <p>© Copyright {thisYear} - All right reserved by Lara Shalab Alsham <em>(A.K.A. Lara Alexander)</em></p>
             </aside>
             <ul className="flex flex-row gap-3">
                 <li>

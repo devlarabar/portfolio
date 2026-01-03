@@ -13,6 +13,8 @@ export default async function Home() {
 	const projects = await prisma.project.findMany({
 		where: { archived: false }
 	  })
+	// Sort projects by the `order` field in ascending order
+	projects.sort((a, b) => a.order - b.order);
 
 	return (
 		<main className="mx-auto pt-24">
