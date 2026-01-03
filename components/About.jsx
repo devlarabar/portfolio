@@ -21,7 +21,7 @@ const About = () => {
                     <div className="flex flex-col gap-2 text-lg">
                         <p>
                             Creative software developer with a love for art and automation, 
-                            and experience in full-stack development, developer advocacy, data analysis, and design.
+                            and experience in full-stack development, developer advocacy, software architecture, and design.
                         </p>
                     </div>
                     <ul className="mt-3 max-sm:text-sm">

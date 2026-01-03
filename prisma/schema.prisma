@@ -20,4 +20,5 @@ model project {
     demo        String
     repository  String
     archived    Boolean @default(false)
+    order       Int @default(0)
 }
