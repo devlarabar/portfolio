@@ -3,10 +3,9 @@
 This is my portfolio, which has links to my socials, my 
 resumé, and displays a few personal projects I enjoy.
 
-My personal portfolio doesn't contain the work I've done at 
-[ion8](https://ion8.net), but I'm happy to discuss this with 
-anyone who's interested! We're doing some pretty cool work 
-over there.
+For more information about the work I do at 
+[ion8](https://ion8.net), shoot me a message! We're doing
+some pretty cool work over there.
 
 ## Development
 
@@ -14,3 +13,4 @@ over there.
 2. Install dependencies with `npm install`
 3. Run Prisma Studio with `npx prisma studio`
 4. Run the app with `npm run dev`
+
