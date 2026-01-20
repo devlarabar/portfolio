@@ -32,7 +32,8 @@ const About = () => {
                                 Building stellar software at <a href="https://ion8.net" target="_blank">ion8</a>!
                             </span>
                         </li>
-                        <li className="flex max-xs:flex-col gap-2 mt-2 xs:items-center">
+                        <li className="flex flex-col gap-0 mt-2">
+                            <div className="flex max-xs:flex-col gap-2 mt-2 xs:items-center">
                             <div className="flex gap-2 items-center">
                                 <MapPinIcon className="h-8 w-8" /> Jacksonville, FL | Toronto, ON
                             </div>
@@ -44,6 +45,10 @@ const About = () => {
                                     height={30}
                                 />
                                 I'm a dual citizen!</span>
+                                </div>
+                                <li className="italic text-sm ml-10 text-primary">
+                                    <em>Happy to relocate outside of North America!</em>
+                                </li>
                         </li>
                         <li className="flex gap-2 mt-2 items-center">
                             <a href="mailto:lsalsham@hotmail.com"
