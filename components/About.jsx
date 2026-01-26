@@ -46,9 +46,11 @@ const About = () => {
                                     />
                                     I'm a dual citizen!</span>
                             </div>
-                            <li className="italic text-sm ml-10 text-primary">
-                                <em>Happy to relocate outside of North America!</em>
-                            </li>
+                            <ul>
+                                <li className="italic text-sm ml-10 text-primary">
+                                    <em>Happy to relocate outside of North America!</em>
+                                </li>
+                            </ul>
                         </li>
                         <li className="flex gap-2 mt-2 items-center">
                             <a href="mailto:lsalsham@hotmail.com"
