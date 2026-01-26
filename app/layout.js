@@ -5,7 +5,6 @@ import ToggleThemeProvider from '@/contexts/ThemeContext/useProvideTheme'
 import ThemeToggle from '@/components/ui/ThemeToggle'
 import Header from '@/components/ui/Header'
 import Footer from '@/components/ui/Footer'
-import Favicon from '@/public/assets/images/favicon.ico'
 import Navigation from '@/components/ui/Navigation'
 import ProgressIndicator from '@/components/ui/ProgressIndicator'
 
@@ -14,7 +13,7 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata = {
 	title: 'Lara S.A. - Software Developer',
 	description: 'Full-Stack Software Developer, Game Developer, and Artist',
-	icons: [{ rel: 'icon', url: Favicon.src }],
+	icons: [{ rel: 'icon', url: '/assets/images/favicon.ico' }],
 }
 
 const RootLayout = ({ children, modal }) => {
