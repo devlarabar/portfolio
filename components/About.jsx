@@ -9,7 +9,7 @@ const About = () => {
                 <aside className="flex items-center justify-center">
                     <img
                         src="/assets/images/portrait.png"
-                        alt="Lara Alexander"
+                        alt="Lara Shalab-Alsham Portrait"
                         className="rounded-full border-[8px] border-neutral max-w-2xs max-sm:w-72 max-2xs:w-52 aspect-square"
                     />
                 </aside>
@@ -96,16 +96,8 @@ const About = () => {
                             </Link>
                         </li>
                     </ul>
-                    {/* <div className="flex flex-col w-full mt-4 max-lg-plus:hidden">
-                        <h3>Toolkit</h3>
-                        <Toolkit />
-                    </div> */}
                 </div>
             </div>
-            {/* <div className="flex flex-col w-full lg-plus:hidden">
-                <h3>Toolkit</h3>
-                <Toolkit />
-            </div> */}
         </div>
     )
 }
