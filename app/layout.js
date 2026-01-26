@@ -20,6 +20,15 @@ const RootLayout = ({ children, modal }) => {
 	return (
 		<html lang="en">
 			<body className={inter.className}>
+				{/* Hidden form for Netlify Forms detection */}
+				<form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
+					<input type="hidden" name="form-name" value="contact" />
+					<input type="text" name="name" />
+					<input type="email" name="email" />
+					<textarea name="message"></textarea>
+					<input name="bot-field" />
+				</form>
+				
 				<ToggleThemeProvider>
 					<ProgressIndicator />
 					<Navigation ThemeToggle={ThemeToggle} />
