@@ -4,7 +4,7 @@ const Contact = () => {
     return (
         <section className="flex flex-col sm:flex-row gap-12 max-w-5xl mx-auto">
             <div className="flex flex-col gap-4 w-full max-w-sm max-sm:order-1">
-                <form method="POST" name="contact" id="contactForm" data-netlify="true" className="flex flex-col gap-4">
+                <form data-netlify="true" method="POST" name="contact" id="contactForm" className="flex flex-col gap-4">
                     <input type="hidden" name="subject" value="Inquiry from Portfolio" />
                     <div className="flex gap-4 flex-col">
                         <input type="text" className="w-full" name="name" id="name" placeholder="Name" />
