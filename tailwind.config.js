@@ -12,6 +12,7 @@ const darkTheme = {
 	"warning": "#FFE26C",
 	"error": "#FF4498",
 	"base-200": "#4F00AB",
+	"highlight": "#270751",
 	"h1:after, h2:after": {
 		"background-color": "#270751",
 	},
@@ -28,6 +29,7 @@ const lightTheme = {
 	"warning": "#FFE26C",
 	"error": "#FF4498",
 	"base-200": "#E8DBC5",
+	"highlight": "#270751",
 	"h1:after, h2:after": {
 		"background-color": "#C9F3F5",
 	},
@@ -36,7 +38,7 @@ const lightTheme = {
 	}
 }
 
-module.exports = {
+export default {
 	content: [
 		'./pages/**/*.{js,ts,jsx,tsx,mdx}',
 		'./components/**/*.{js,ts,jsx,tsx,mdx}',

@@ -127,6 +127,12 @@ textarea {
 	opacity: 1;
 }
 
+/* Text styles */
+
+.highlighted {
+	@apply bg-info bg-opacity-25 px-1 rounded;
+}
+
 /* Scrollbar */
 
 html::-webkit-scrollbar-track,

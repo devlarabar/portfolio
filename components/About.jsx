@@ -9,7 +9,7 @@ const About = () => {
                 <aside className="flex items-center justify-center">
                     <img
                         src="/assets/images/portrait.png"
-                        alt="Lara Alexander"
+                        alt="Lara Shalab-Alsham Portrait"
                         className="rounded-full border-[8px] border-neutral max-w-2xs max-sm:w-72 max-2xs:w-52 aspect-square"
                     />
                 </aside>
@@ -20,35 +20,35 @@ const About = () => {
                     </div>
                     <div className="flex flex-col gap-2 text-lg">
                         <p>
-                            Creative software developer with a love for art and automation, 
+                            Creative software developer with a love for art and automation,
                             and experience in full-stack development, developer advocacy, software architecture, and design.
                         </p>
                         <p>In my free time, I like lifting heavy things, playing and <a href="https://tinydoom.com" target="_blank">developing games</a>, and creating art.</p>
                     </div>
                     <ul className="mt-3 max-sm:text-sm">
                         <li className="flex max-xs:flex-col gap-2 mt-2 xs:items-center">
-                        <BuildingOfficeIcon className="h-8 w-8" />
+                            <BuildingOfficeIcon className="h-8 w-8" />
                             <span>
                                 Building stellar software at <a href="https://ion8.net" target="_blank">ion8</a>!
                             </span>
                         </li>
                         <li className="flex flex-col gap-0 mt-2">
                             <div className="flex max-xs:flex-col gap-2 mt-2 xs:items-center">
-                            <div className="flex gap-2 items-center">
-                                <MapPinIcon className="h-8 w-8" /> Jacksonville, FL | Toronto, ON
-                            </div>
-                            <span className="font-nexa text-[1.2rem] text-accent italic flex items-center gap-2">
-                                <Image
-                                    src="/assets/images/misc/canada_usa.png"
-                                    alt="Canada and USA flags"
-                                    width={30}
-                                    height={30}
-                                />
-                                I'm a dual citizen!</span>
+                                <div className="flex gap-2 items-center">
+                                    <MapPinIcon className="h-8 w-8" /> Jacksonville, FL | Toronto, ON
                                 </div>
-                                <li className="italic text-sm ml-10 text-primary">
-                                    <em>Happy to relocate outside of North America!</em>
-                                </li>
+                                <span className="font-nexa text-[1.2rem] text-accent italic flex items-center gap-2">
+                                    <Image
+                                        src="/assets/images/misc/canada_usa.png"
+                                        alt="Canada and USA flags"
+                                        width={30}
+                                        height={30}
+                                    />
+                                    I'm a dual citizen!</span>
+                            </div>
+                            <li className="italic text-sm ml-10 text-primary">
+                                <em>Happy to relocate outside of North America!</em>
+                            </li>
                         </li>
                         <li className="flex gap-2 mt-2 items-center">
                             <a href="mailto:lsalsham@hotmail.com"
@@ -96,16 +96,8 @@ const About = () => {
                             </Link>
                         </li>
                     </ul>
-                    {/* <div className="flex flex-col w-full mt-4 max-lg-plus:hidden">
-                        <h3>Toolkit</h3>
-                        <Toolkit />
-                    </div> */}
                 </div>
             </div>
-            {/* <div className="flex flex-col w-full lg-plus:hidden">
-                <h3>Toolkit</h3>
-                <Toolkit />
-            </div> */}
         </div>
     )
 }

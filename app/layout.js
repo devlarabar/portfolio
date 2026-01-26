@@ -12,8 +12,8 @@ import ProgressIndicator from '@/components/ui/ProgressIndicator'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-	title: 'Lara Alexander',
-	description: 'Software developer portfolio',
+	title: 'Lara S.A. - Software Developer',
+	description: 'Full-Stack Software Developer, Game Developer, and Artist',
 	icons: [{ rel: 'icon', url: Favicon.src }],
 }
 
