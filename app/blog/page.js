@@ -12,6 +12,9 @@ export default function BlogPage() {
     return (
         <main className="mx-auto pt-24 pb-24">
             <section className="blog-content max-w-2xl flex flex-col gap-12 px-8 max-2xs:px-6 md:px-16 w-full m-auto">
+                <Link href="/" className="text-sm text-base-content/60 hover:text-accent no-underline">
+                    ← Back to home
+                </Link>
                 <h1>Blog</h1>
 
                 {posts.length === 0 ? (
