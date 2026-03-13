@@ -1,6 +1,7 @@
 import '@/styles/globals.css'
 import '@/styles/stars.css'
 import { Inter } from 'next/font/google'
+import Script from 'next/script'
 import ToggleThemeProvider from '@/contexts/ThemeContext/useProvideTheme'
 import ThemeToggle from '@/components/ui/ThemeToggle'
 import Header from '@/components/ui/Header'
@@ -42,6 +43,10 @@ const RootLayout = ({ children, modal }) => {
 					</main>
 					<Footer />
 				</ToggleThemeProvider>
+				<Script
+					src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+					strategy="afterInteractive"
+				/>
 			</body>
 		</html>
 	)
