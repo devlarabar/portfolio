@@ -186,6 +186,30 @@ html::-webkit-scrollbar-thumb,
 	margin: auto;
 }
 
+/* Blog content — override global heading styles for readability */
+
+.blog-content h2,
+.blog-content h3,
+.blog-content h4 {
+    text-transform: none;
+    letter-spacing: normal;
+    text-align: left;
+    margin-left: 0;
+    width: 100%;
+}
+
+.blog-content h2::after {
+    display: none;
+}
+
+.blog-content h2 {
+    @apply text-left text-secondary mx-0 text-2xl font-bold;
+}
+
+.blog-content h3 {
+    @apply text-xl font-semibold text-primary;
+}
+
 .custom-modal {
 	position: fixed;
 	display: flex;

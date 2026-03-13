@@ -29,13 +29,13 @@ export default async function PostPage({ params }) {
     }
 
     return (
-        <main className="mx-auto pt-24">
-            <article className="max-w-3xl flex flex-col gap-8 px-8 max-2xs:px-4 md:px-12 w-full m-auto">
-                <Link href="/blog" className="text-sm text-base-content/60 hover:text-accent">
+        <main className="mx-auto pt-24 pb-24">
+            <article className="blog-content max-w-2xl flex flex-col gap-8 px-8 max-2xs:px-6 md:px-16 w-full m-auto">
+                <Link href="/blog" className="text-sm text-base-content/60 hover:text-accent no-underline">
                     ← Back to blog
                 </Link>
 
-                <header className="flex flex-col gap-3">
+                <header className="flex flex-col gap-2">
                     <h1>{post.title}</h1>
                     <time
                         dateTime={post.date}

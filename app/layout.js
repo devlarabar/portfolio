@@ -4,7 +4,6 @@ import { Inter } from 'next/font/google'
 import Script from 'next/script'
 import ToggleThemeProvider from '@/contexts/ThemeContext/useProvideTheme'
 import ThemeToggle from '@/components/ui/ThemeToggle'
-import Header from '@/components/ui/Header'
 import Footer from '@/components/ui/Footer'
 import Navigation from '@/components/ui/Navigation'
 import ProgressIndicator from '@/components/ui/ProgressIndicator'
@@ -12,7 +11,7 @@ import ProgressIndicator from '@/components/ui/ProgressIndicator'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-	title: 'Lara S.A. - Software Developer',
+	title: "devlarabar's blog",
 	description: 'Full-Stack Software Developer, Game Developer, and Artist',
 	icons: [{ rel: 'icon', url: '/assets/images/favicon.ico' }],
 }
