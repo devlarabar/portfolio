@@ -3,7 +3,6 @@ import '@/styles/stars.css'
 import { Inter } from 'next/font/google'
 import ToggleThemeProvider from '@/contexts/ThemeContext/useProvideTheme'
 import ThemeToggle from '@/components/ui/ThemeToggle'
-import Header from '@/components/ui/Header'
 import Footer from '@/components/ui/Footer'
 import Navigation from '@/components/ui/Navigation'
 import ProgressIndicator from '@/components/ui/ProgressIndicator'
@@ -28,7 +27,7 @@ const RootLayout = ({ children, modal }) => {
 					<textarea name="message"></textarea>
 					<input name="bot-field" />
 				</form>
-				
+
 				<ToggleThemeProvider>
 					<ProgressIndicator />
 					<Navigation ThemeToggle={ThemeToggle} />

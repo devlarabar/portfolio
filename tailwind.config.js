@@ -77,7 +77,7 @@ export default {
 			'gradient-start': '#3abff8',
 		}
 	},
-	plugins: [require("daisyui")],
+	plugins: [require("daisyui"), require("@tailwindcss/typography")],
 	daisyui: {
 		themes: [
 			{

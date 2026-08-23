@@ -1,10 +1,8 @@
 import { PrismaClient } from "@prisma/client"
-import Project from "@/components/project/Project"
 import About from "@/components/About"
 import Contact from "@/components/Contact"
 import Separator from "@/components/ui/Separator"
 import Toolkit from "@/components/Toolkit"
-import Link from "next/link"
 import ProjectsContainer from "@/components/project/ProjectsContainer"
 
 export default async function Home() {

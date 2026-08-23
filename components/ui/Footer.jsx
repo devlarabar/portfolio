@@ -1,4 +1,4 @@
-import { EnvelopeIcon, DocumentCheckIcon } from "@heroicons/react/24/outline"
+import { EnvelopeIcon, DocumentCheckIcon, BookOpenIcon } from "@heroicons/react/24/outline"
 import Link from "next/link"
 
 const Footer = () => {
@@ -29,6 +29,11 @@ const Footer = () => {
                         </svg>
                     </a>
                 </li>
+                {/* <li>
+                    <Link href="/blog" className="flex gap-2 items-center" aria-label="Blog">
+                        <BookOpenIcon className={size} />
+                    </Link>
+                </li> */}
                 <li>
                     <Link href="/resume/Lara_Shalab-Alsham_Resume.pdf" target="_blank" className="flex gap-2 items-center" aria-label="Resume">
                         <DocumentCheckIcon className={size} />
