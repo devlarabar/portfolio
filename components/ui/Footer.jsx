@@ -29,11 +29,11 @@ const Footer = () => {
                         </svg>
                     </a>
                 </li>
-                <li>
+                {/* <li>
                     <Link href="/blog" className="flex gap-2 items-center" aria-label="Blog">
                         <BookOpenIcon className={size} />
                     </Link>
-                </li>
+                </li> */}
                 <li>
                     <Link href="/resume/Lara_Shalab-Alsham_Resume.pdf" target="_blank" className="flex gap-2 items-center" aria-label="Resume">
                         <DocumentCheckIcon className={size} />
