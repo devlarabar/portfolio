@@ -4,7 +4,7 @@ This is my portfolio, which has links to my socials, my
 resumé, and displays a few personal projects I enjoy.
 
 For more information about the work I do at 
-[ion8](https://ion8.net), shoot me a message! We're doing
+[Journalia](https://journalia.no), shoot me a message! We're doing
 some pretty cool work over there.
 
 ## Development

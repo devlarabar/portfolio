@@ -21,7 +21,7 @@ const About = () => {
                     <div className="flex flex-col gap-2 text-lg">
                         <p>
                             Creative software developer with a love for art and automation,
-                            and experience in full-stack development, developer advocacy, software architecture, and design.
+                            and experience in agent-first development, software architecture, and design.
                         </p>
                         <p>In my free time, I like lifting heavy things, playing and <a href="https://tinydoom.com" target="_blank">developing games</a>, and creating art.</p>
                     </div>
@@ -29,26 +29,35 @@ const About = () => {
                         <li className="flex max-xs:flex-col gap-2 mt-2 xs:items-center">
                             <BuildingOfficeIcon className="h-8 w-8" />
                             <span>
-                                Building stellar software at <a href="https://ion8.net" target="_blank">ion8</a>!
+                                Building stellar software at <a href="https://journalia.no" target="_blank">Journalia</a>!
                             </span>
                         </li>
                         <li className="flex flex-col gap-0 mt-2">
                             <div className="flex max-xs:flex-col gap-2 mt-2 xs:items-center">
                                 <div className="flex gap-2 items-center">
-                                    <MapPinIcon className="h-8 w-8" /> Jacksonville, FL | Toronto, ON
+                                    <MapPinIcon className="h-8 w-8" /> Oslo, Norway 
                                 </div>
                                 <span className="font-nexa text-[1.2rem] text-accent italic flex items-center gap-2">
+                                    <Image
+                                        src="/assets/images/misc/flag_norway.png"
+                                        alt="Norwegian flag"
+                                        width={25}
+                                        height={25}
+                                        className="rounded-sm"
+                                    />
+                                    </span>
+                                {/* <span className="font-nexa text-[1.2rem] text-accent italic flex items-center gap-2">
                                     <Image
                                         src="/assets/images/misc/canada_usa.png"
                                         alt="Canada and USA flags"
                                         width={30}
                                         height={30}
                                     />
-                                    I'm a dual citizen!</span>
+                                    I'm a dual citizen!</span> */}
                             </div>
                             <ul>
                                 <li className="italic text-sm ml-10 text-primary">
-                                    <em>Happy to relocate outside of North America!</em>
+                                    <em>Living the Eurodream, but I'm a dual Canadian/US citizen!</em>
                                 </li>
                             </ul>
                         </li>
